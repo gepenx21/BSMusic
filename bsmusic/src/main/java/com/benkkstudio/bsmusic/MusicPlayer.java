@@ -64,6 +64,7 @@ public class MusicPlayer implements CurrentSessionCallback{
                         instance.onPlay();
                         if (instance.currentSessionCallback != null) {
                             instance.currentSessionCallback.updatePlaybackState(instance.PLAYING_STATE);
+                            instance.currentSessionCallback.updatePlaybackState(instance.SKIP_STATE);
                         }
                     }
                 }
